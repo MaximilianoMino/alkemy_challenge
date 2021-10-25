@@ -1,0 +1,41 @@
+{
+  "name": "alkemy_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianoMino/alkemy_challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianoMino/alkemy_challenge/issues"
+  },
+  "homepage": "https://github.com/MaximilianoMino/alkemy_challenge#readme",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "dotenv": "^10.0.0"
+  }
+}
