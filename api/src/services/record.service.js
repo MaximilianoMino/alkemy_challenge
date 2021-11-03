@@ -10,6 +10,11 @@ module.exports = class {
     });
   }
 
+  async getAllRecords() {
+    const allRecords = await Record.findAll();
+    return allRecords;
+  }
+
   async getEntryRecords() {
     const entryRecords = await Record.findAll({
       where: {
@@ -28,6 +33,13 @@ module.exports = class {
 
     return egressRecords;
   }
+  async getLatest() {
+    const latest = await Record.findAll({
+      limit: 10,
+      order: [["createdAt", "DESC"]],
+    });
+    return latest;
+  }
 
   async getRecordById(id) {
     const record = await Record.findByPk(id);
@@ -40,7 +52,6 @@ module.exports = class {
       { date: date, concept: concept, amount: amount },
       { where: { id: id } }
     );
-    console.log(record);
     return record;
   }
 

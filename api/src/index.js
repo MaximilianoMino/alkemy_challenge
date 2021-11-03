@@ -10,4 +10,4 @@ getConnection()
       console.log(`Example app listening on port ${PORT}!`)
     );
   })
-  .catch(console.log());
+  .catch((err) => console.log(err));
